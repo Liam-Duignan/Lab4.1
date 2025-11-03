@@ -1,0 +1,37 @@
+The status line was Ok
+The server header is 2.4.7
+
+first 10 lines of scanme.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Go ahead and ScanMe!</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#2A0D45">
+<link rel="preload" as="image" href="/images/sitelogo.png" imagesizes="168px" imagesrcset="/images/sitelogo.png, /images/sitelogo-2x.png 2x">
+<link rel="preload" as="image" href="/shared/images/nst-icons.svg">
+<link rel="stylesheet" href="/shared/css/nst.css?v=2">
+<script async src="/shared/js/nst.js?v=2"></script>
+
+title = Go ahead and scan me
+
+form = 
+    <form class="nst-search" id="nst-head-search" action="/search/">
+    <input class="nst-search-q" name="q" type="search" placeholder="Site Search">
+    <button class="nst-search-button" title="Search">
+    <img style="width:100%;aspect-ratio:1/1;" alt="" aria-hidden="true"
+    src="/shared/images/nst-icons.svg#search">
+    </button>
+    </form>
+
+Output of Curl.py
+Status: 200
+Final URL: http://scanme.nmap.org/
+Server header: Apache/2.4.7 (Ubuntu)
+Content-Type: text/html
+First 200 chars of body:\n <!DOCTYPE html>\n<html lang="en">\n<head>\n<title>Go ahead and ScanMe!</title>\n<meta name="viewport" content="width=device-width,initial-scale=1">\n<meta name="theme-color" content="#2A0D45">\n<link rel="p
+
+Did requests and curl report the same status and server header?
+No
+If different, what header or other factor might explain it (redirects, default headers, user agent)?
+Whatever way requests pulls it into the code

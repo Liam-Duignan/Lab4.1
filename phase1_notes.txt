@@ -35,3 +35,11 @@ Did requests and curl report the same status and server header?
 No
 If different, what header or other factor might explain it (redirects, default headers, user agent)?
 Whatever way requests pulls it into the code
+
+lab4-1_get.py results , the examples all come back as 200 , it gives an error message because there is no host
+The server of all of them are diffrent , example.com has no server
+
+the actionable information is propably the sever and the status
+
+lab4-1_parse.py 
+No login forms
